@@ -29,8 +29,8 @@ if game_level == "1":
     elif (random_number > int(player_number)): ## computer number larger than player number
         print " Too Low"
         print " sorry you lost :( "
-#    else:
- #       print " sorry you lost :( "
+    else:
+       print " sorry you lost :( "
 #Level 2
 elif game_level == "2":
     player_number = raw_input("enter number between 1 to 25 : ")
