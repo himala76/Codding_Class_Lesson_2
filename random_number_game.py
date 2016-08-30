@@ -23,8 +23,14 @@ if game_level == "1":
     print "Computer says: " + str(random_number)
     if (random_number == player_number):
         print "****** you win ******"
-    else:
+    elif (random_number > player_number):
+        print " Too Hi"
         print " sorry you lost :( "
+    elif (random_number < player_number):
+        print " Too Low"
+        print " sorry you lost :( "
+#    else:
+ #       print " sorry you lost :( "
 #Level 2
 elif game_level == "2":
     player_number = raw_input("enter number between 1 to 25 : ")
