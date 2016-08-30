@@ -21,12 +21,12 @@ if game_level == "1":
     print "Wait.. Computer Thinking"
     time.sleep(1.5)
     print "Computer says: " + str(random_number)
-    if (random_number == player_number):
+    if (random_number == int(player_number)): # player number and computer number matching same
         print "****** you win ******"
-    elif (random_number > player_number):
+    elif (random_number < int(player_number)): # computer number smaller than player number
         print " Too Hi"
         print " sorry you lost :( "
-    elif (random_number < player_number):
+    elif (random_number > int(player_number)): ## computer number larger than player number
         print " Too Low"
         print " sorry you lost :( "
 #    else:
